@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    /> -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://kit.fontawesome.com/39ba5f3790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--------- INTIAL-INTERFACE-------- -------->
+    <div id="overlay"></div>
+    <header id="header">
+        <div class="container">
+            <nav>
+              <!-- <div><span style="font-size: 4rem;color:aqua;">G</span><span style="font-size: 1.5rem;">anesh</span></div> -->
+               <div class="mylogo" style="width: 70px;overflow: hidden;border-radius: 50%;display: flex;justify-content: center;">
+                <img src="assets/mylogo.png" alt="Mylogo" width="70px" style="border-radius: 50%;transform: scale(1.3);filter:hue-rotate(30deg)">
+               </div>
+               <div class="menubar">
+                <ul>
+                    <li id="close-menu"><i class="fa-solid fa-arrow-right"></i></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#PortFolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-icon" id="open-menu"><i class="fa-solid fa-bars"></i></div>
+               </div>
+            </nav>
+            <div class="meta-info">
+                <p>Java Developer</p>
+                <h1>Hello, I'm <span>Ganesh</span><br/> From Technical <br/><span style="color:rgb(0, 183, 255);">World</span></h1>
+            </div>
+        </div>
+    </header>
+    <hr id="horizontal"></hr>
+    <!--------------- About section ---------------->
+
+    <div class="about-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-section-col-1">
+                    <img src="assets/lagnwala2(small-screen).jpg" alt="">
+                </div>
+                <div class="about-section-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ex, fugiat mollitia laborum quos porro quaerat nobis vitae, nulla repellat, voluptate excepturi aspernatur? Modi voluptates velit unde vel pariatur ratione consequatur ad at expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laborum amet vel alias praesentium odit tempora sunt sint! In dolorem culpa reiciendis natus nostrum molestiae dignissimos quam consectetur, magnam est.  </p>
+                    <div class="tab-links">
+                        <ul>
+                            <li class="tab-link tab-link-active" onclick="openTab('skills')">Skills</li>
+                            <li class="tab-link" onclick="openTab('experience')">Experience</li>
+                            <li class="tab-link" onclick="openTab('education')">Education</li>
+                        </ul>
+                    </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Designer</span><br>Great UI build on great ideas</li>
+                        <li><span>Android Developer</span><br>Android/iOS apps creation</li>
+                        <li><span>Data Scientist</span><br>Works on large data</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025-current</span><br>Working  as Freelancer</li>
+                        <li><span>2024-25</span><br>Worked at Blikit as Backend developer</li>
+                        <li><span>2023-24</span><br>Intern at Google for the roll of Frontend developer</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BSC(CS) (2023-current) </span><br>Final Year Pursing from KKW ACS &CS college,Nashik-422203</li>
+                        <li><span>HSC (2023)</span><br>KKW ACS college,Pimpalgaon (B)</li>
+                        <li><span>SSC(2021)</span><br>New English school,Dhondgavhan,(Nashik)</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- ------------------SERVICES --------------- -->
+    <div class="services-section" id="services">
+        <div class="container">
+            <h1 class="sub-title" style="justify-self: start;">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code icon"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima consectetur veritatis, explicabo ipsum voluptat</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android icon"></i>
+                    <h2>Android Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima consectetur veritatis, explicabo ipsum voluptat</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-node-js icon"></i>
+                    <h2>Backend Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima consectetur veritatis, explicabo ipsum voluptat</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- -------------------PORTFOLIO----------------- -->
+     <div class="portfolio" id="PortFolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/work-1.png" alt="Work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Connect, share, and interact with friends through posts and messages.</p>
+                        <a><i class="fa-solid fa-arrow-up-right-from-square portfolio-icon"></i></a>
+                        <span id="coming-soon-msg">Coming soon....</span>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work-2.png" class="img-fluid" alt="Work2">
+                     <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Stream songs, create playlists, and enjoy music anywhere, anytime.</p>
+                        <a><i class="fa-solid fa-arrow-up-right-from-square portfolio-icon"></i></a>
+                        <span id="coming-soon-msg">Coming soon....</span>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work-3.png" alt="Work3">
+                     <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Browse products, compare prices, and shop securely with fast delivery.</p>
+                        <a><i class="fa-solid fa-arrow-up-right-from-square portfolio-icon"></i></a>
+                        <span id="coming-soon-msg">Coming soon....</span>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">See more..</a>
+        </div>
+     </div>
+     <hr id="horizontal"></hr>
+     <!-- -----------------------Contact --------------------- -->
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left-section">
+                    <h2 class="sub-title" style="margin-top: 25px;">Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i>  gtidke73@gmail.com </p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7448087631 </p>
+                    
+                    <div class="social-media-links">
+                    <a href="https://www.instagram.com/coderganesh231/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/gtidke73"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://github.com/GOATGANESH"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ganesh-tidke-0830292b6/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/GaneshResume.pdf" download class="download-cv">Download CV</a>
+                </div>
+                <div class="contact-right-section">
+                    <!-- <h6  class="sub-title" style="font-size:2rem; text-shadow:5px 5px 20px rgb(198, 5, 89);">Feedback Form</h6> -->
+                    <form name="submit-to-google-sheet">
+                        <label>Enter Name </label>
+                        <input type="text" placeholder="Your name" name="name" required>
+                        <label>Enter Email </label>
+                        <input type="email" placeholder="Your email" name="Email" required>
+                        <label>Message </label>
+                        <textarea name="Message" type="textarea" rows="2" placeholder="Your Message goes here"></textarea>
+                        <input type="submit" value="Submit" id="submit">
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div>
+                <p>Copyright &copy; Ganesh. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz_U56xSIMLFQJJHBSsIbTi2CXBgChhkHmop4MO34_N2QHv5fR-NpblLDvI0lRmLMyn/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById('msg')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        setTimeout(function(){
+            msg.innerHTML=""
+        },500)
+      })
+      .catch(error => console.error('Error!', error.message))
+      form.reset()
+      msg.innerHTML="Details sent Successfully !"
+  })
+</script>
+</html>

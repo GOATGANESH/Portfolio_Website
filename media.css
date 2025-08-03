@@ -1,0 +1,303 @@
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes pullUp {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+         transform: translateY(-15px);
+    }
+}
+@keyframes pullDown {
+    from{
+        transform: translateY(-15px);
+    }
+    to{
+         transform: translateY(0px);
+    }
+}
+@media only screen and (max-width:600px){
+
+    /* -----------HEADER SECTION -------------- */
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } 
+    
+    header{
+        background:url("assets/Expanded\(small-screen\).jpg");
+        background-position: top;
+        background-size: cover;
+         border-radius: 10px;
+         margin-top: 0;
+         border-radius: 0;
+         width: 100%;
+    }
+  
+    .menubar ul{
+        background:linear-gradient(to bottom,rgb(5, 140, 193),rgb(1, 16, 83));
+        color:rgb(254, 254, 254);
+        position:fixed;
+        top:0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        flex-direction: column;
+        z-index: 3;
+        padding:40px 0;
+        transition:right 0.6s;
+    }
+    .menubar ul li{
+        margin-top: 15px;
+    }
+    #close-menu{
+        display: initial;
+        font-size: 28px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        padding:10px 10px;
+    }
+    .meta-info p{
+      font-size: 1rem;
+    }
+    .meta-info h1{
+        font-size: 1.5rem;
+    }
+    .menu-icon{
+        display: initial;
+    }
+
+    /* -----------------ABOUT SECTION------------------ */
+    .sub-title{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .about-section{
+    padding:30px 0;
+    }
+    .about-section .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .about-section-col-1 img{
+    width:100%;
+    border-radius: 50%;
+    box-shadow: 10px 5px 100px rgb(0, 255, 255);
+    }
+    .about-section-col-2{
+    padding:30px 10px;
+    }
+    .about-section-col-2 p{
+    font-size: 12px;
+    }
+    /* -------------MY SERVICES --------------- */
+
+    .services-section{
+        padding:10px 0;
+    }
+    .services-list{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+    grid-template-columns:1fr;
+    gap:30px 0;
+    margin-top:5%;
+    }
+    .services-list div{
+        padding:40px;
+        border-radius: 5px;
+    }
+
+    /* ---------------PORTFOLIO----------- */
+
+    .work-list{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); */
+    grid-template-columns:1fr;
+    gap:30px 0px;
+    margin-top:30px;
+    }
+    .btn{
+        padding:10px 20px;
+        font-size: 15px;
+    }
+
+    /* ------------CONTACT SECTION ----------- */
+
+    .contact-section{
+    margin-top:10px;
+    }
+.contact-section .row{
+    flex-direction: column;
+    justify-content:start;
+}
+.contact-left-section{
+    padding:10px 10px;
+    display: grid;
+    width: 100%;
+    place-content: center;
+}
+
+.contact-right-section{
+    padding:10px 10px;
+    display: grid;
+}
+.contact-right-section form{
+    position: relative;
+    justify-self: center;
+    width: 100%;
+    
+}
+.contact-right-section form label{
+    display: inline-block;
+    width: max-content;
+}
+.contact-right-section form input,textarea{
+    width: 100%;
+}
+.download-cv{
+    justify-self: center;
+}
+#submit{
+    justify-self: center;
+}
+}
+
+@media only screen and (max-width:1024px) and (min-width:601px){
+
+    /* -----------HEADER SECTION -------------- */
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header{
+        background:url("assets/Expanded\(small-screen\).jpg");
+        background-position: top;
+        background-size: cover;
+         border-radius: 10px;
+    }
+    .menubar ul{
+        background:linear-gradient(to bottom,rgb(5, 140, 193),rgb(1, 16, 83));
+        color:rgb(254, 254, 254);
+        position:fixed;
+        top:0;
+        right:-400px;
+        width: 400px;
+        height: 100vh;
+        flex-direction: column;
+        z-index: 3;
+        padding:40px 30px;
+        transition:right 0.6s;
+    }
+    .menubar ul li{
+        margin-top: 15px;
+    }
+    #close-menu{
+        display: initial;
+        font-size: 28px;
+    }
+    .container nav{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 30px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        padding:10px 10px;
+    }
+    .meta-info p{
+      font-size: 2rem;
+    }
+    .meta-info h1{
+        font-size: 3rem;
+    }
+    .menu-icon{
+        display: initial;
+        font-size: 40px;
+    }
+
+    /* -----------------ABOUT SECTION------------------ */
+    .sub-title{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    .about-section{
+        margin-top: 5%;
+        padding:30px 0;
+    }
+    .about-section .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .about-section-col-1{
+        display: flex;
+        justify-content: center;
+    }
+    .about-section-col-1 img{
+    width:50%;
+    border-radius: 50%;
+    box-shadow: 10px 5px 100px rgb(0, 255, 255);
+    }
+    .about-section-col-2{
+        margin-top: 5%;
+        padding:30px 10px;  
+    }
+    
+    /* -------------MY SERVICES --------------- */
+
+    .services-section{
+        padding:10px 0;
+    }
+    .services-list{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+    grid-template-columns:1fr 1fr;
+    gap:30px 20px;
+    margin-top:5%;
+    }
+    .services-list div{
+        padding:40px;
+        border-radius: 5px;
+    }
+
+    /* ---------------PORTFOLIO----------- */
+
+    .work-list{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); */
+    grid-template-columns:1fr 1fr;
+    gap:30px 20px;
+    margin-top:30px;
+    }
+    .btn{
+        padding:10px 20px;
+        font-size: 15px;
+    }
+
+    
+}
+
